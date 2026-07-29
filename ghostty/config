@@ -1,0 +1,27 @@
+command = /usr/bin/zsh
+
+theme = "kanso-ink"
+
+window-padding-x = 10
+window-padding-y = 10
+
+window-decoration = true
+
+window-save-state = always
+
+macos-titlebar-style = transparent
+
+window-show-tab-bar = auto
+
+keybind = alt+w=close_surface
+keybind = shift+insert=paste_from_clipboard
+
+
+# Horizontal scrolling
+mouse-scroll-multiplier = 1
+
+# typography
+font-family = "JetBrainsMono Nerd Font"
+font-thicken=true
+font-thicken-strength=1
+adjust-cell-height=1

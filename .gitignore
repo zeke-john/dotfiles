@@ -1,0 +1,12 @@
+# local backups
+*.bak
+*.bak.*
+*.orig
+
+# python
+__pycache__/
+*.py[cod]
+
+# editor/OS junk
+*.swp
+.DS_Store
