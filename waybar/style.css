@@ -22,7 +22,13 @@ window#waybar {
   background-color: #0F1318;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 1px;
-  padding: 0 6px;
+  padding: 0 8px;
+}
+
+/* the clock's own "[ ... ]" already carries literal spaces, so it needs
+   less CSS padding to read the same 8px as every other pill */
+.modules-center {
+  padding: 0 4px;
 }
 
 .modules-left {
@@ -122,15 +128,34 @@ window#waybar {
 }
 
 /* === Right cluster: text readout === */
+/* 4px each side => 8px between items, matching the pill's 8px inner padding */
+#custom-window-count,
 #custom-clipboard,
 #pulseaudio,
 #bluetooth,
 #network,
-#cpu,
+#memory,
 #battery {
   min-width: 0;
   margin: 0 4px;
   font-size: 12px;
+}
+
+/* first and last item sit flush, so the pill's own padding sets the edge gap */
+#custom-clipboard {
+  margin-left: 0;
+}
+
+#battery {
+  margin-right: 0;
+}
+
+/* window-count collapses fully when the workspace has 0-1 windows */
+#custom-window-count.idle {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  border: none;
 }
 
 /* === Slack notification === */
