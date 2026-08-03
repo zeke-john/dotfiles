@@ -11,7 +11,7 @@ my configs for [omarchy](https://omarchy.org/) (arch + hyprland) and neovim.
 ```sh
 git clone https://github.com/zeke-john/dotfiles.git
 cd dotfiles
-cp -r waybar hypr ghostty nvim ~/.config/
+cp -r waybar hypr kitty nvim ~/.config/
 ```
 
 then reload things:
